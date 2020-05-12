@@ -29,6 +29,8 @@ Structura fisierelor este urmatoarea:
 `app.py` este script-ul principal. `lbp.py` face apel la `load_data.py` pentru a incarca datele
  din baza de date (din fisierul `cifar-10-batches-py`) si apoi pentru a genera features pe baza
   histogramelor generate de regiuni de imagine.
+  
+ Instructiuni de setup pentru baza de date si mai multe informatii despre cifar-10 aici: https://www.cs.toronto.edu/~kriz/cifar.html
 
 `train_data` si `test_data` sunt fisiere pickle ce contin DataFrames cu features pentru antrenare
  si testare. Exista pentru a crea o metoda de caching pentru date (histogramele lbp sunt foarte
